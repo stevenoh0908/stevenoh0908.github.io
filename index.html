@@ -22,7 +22,7 @@ layout: default
 					</div>
 					<div class="title">
 						{% if post.status == "notice" %}
-						<div style="border: 1px solid pink; background-color: pink; color: white; padding: 5px; border-radius: 5px; padding: 5px; margin-right: 3px;>공지</div>
+						<div style="border: 1px solid pink; background-color: pink; color: white; padding: 5px; border-radius: 5px; padding: 5px; margin-right: 3px;">공지</div>
 						{% endif %}
 						<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
 					</div>
