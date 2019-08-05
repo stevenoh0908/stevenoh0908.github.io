@@ -22,7 +22,10 @@ layout: default
 					</div>
 					<div class="title">
 						{% if post.status == "notice" %}
-						<span style="border: 1px solid LightCoral; background-color: LightCoral; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">공지</span>
+							<span style="border: 1px solid LightCoral; background-color: LightCoral; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">공지</span>
+						{% endif %}
+						{% if post.status == "hot" &}
+							<span style="border: 1px solid Gold; background-color: Gold; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">HOT</span>
 						{% endif %}
 						<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
 					</div>
