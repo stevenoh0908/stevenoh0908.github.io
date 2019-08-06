@@ -27,11 +27,8 @@ layout: default
 						{% if post.status == "hot" %}
 							<span style="border: 1px solid Gold; background-color: Gold; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">HOT</span>
 						{% endif %}
-						{% if post.status == "question-unsolved" %}
-							<span style="border: 1px solid FireBrick; background-color: FireBrick; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">Unsolved</span>
-						{% endif %}
-						{% if post.status == "question-solved" %}
-							<span style="border: 1px solid ForestGreen; background-color: ForestGreen ; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">Solved</span>
+						{% if post.status == "question-unsolved" or post.status == "question-solved" %}
+							<span style="border: 1px solid CornflowerBlue; background-color: CornflowerBlue; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">Unsolved</span>
 						{% endif %}
 						<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
 					</div>
