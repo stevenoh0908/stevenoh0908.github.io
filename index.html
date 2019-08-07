@@ -7,6 +7,7 @@ layout: default
 		{% unless post.next %}
 			{% if post.status == "notice" %}
 				<h3 class="code">Notice</h3>
+				{% break %}
 			{% endif %}
 		{% endunless %}
 		
