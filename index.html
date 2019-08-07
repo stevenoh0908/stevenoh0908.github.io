@@ -3,14 +3,7 @@ layout: default
 ---
 
 <section>
-	{% for post in site.posts %}
-		{% unless post.next %}
-			{% if post.status == "notice" %}
-				<h3 class="code">Notice</h3>
-				{% break %}
-			{% endif %}
-		{% endunless %}
-	
+	{% for post in site.posts %}	
 		{% unless post.next %}
 			<h3 class="code">{{ post.date | date: '%Y' }}</h3>
 			{% else %}
