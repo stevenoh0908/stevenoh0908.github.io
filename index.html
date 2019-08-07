@@ -27,6 +27,28 @@ layout: default
 			</ul>
 		{% endif %}
 	{% endfor %}
+	{% for post in site.posts %}
+		{% if post.status == "hot" %}
+			<h3 class="code">Hot</h3>
+			{% break %}
+		{% endif %}
+	{% endfor %}
+	
+	{% for post in site.posts %}
+		{% if post.status == "hot" %}
+			<ul>
+				<li>
+					<div class="post-date code">
+						<span>{{ post.date | date: "%b %d" }}</span>
+					</div>
+					<div class="title">
+						<span style="border: 1px solid Gold; background-color: Gold; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">공지</span>
+						<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+					</div>
+				</li>
+			</ul>
+		{% endif %}
+	{% endfor %}
 		
 	{% for post in site.posts %}		
 		{% unless post.next %}
@@ -46,15 +68,6 @@ layout: default
 						<span>{{ post.date | date: "%b %d" }}</span>
 					</div>
 					<div class="title">
-						{% if post.status == "notice" %}
-							<span style="border: 1px solid LightCoral; background-color: LightCoral; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">공지</span>
-						{% endif %}
-						{% if post.status == "hot" %}
-							<span style="border: 1px solid Gold; background-color: Gold; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">HOT</span>
-						{% endif %}
-						{% if post.status == "question-unsolved" or post.status == "question-solved" %}
-							<span style="border: 1px solid CornflowerBlue; background-color: CornflowerBlue; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">질문</span>
-						{% endif %}
 						<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
 					</div>
 				</li>
