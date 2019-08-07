@@ -39,7 +39,7 @@ layout: default
 			{% endif %}
 		
 		{% endunless %}
-		{% if post.status == "public" or post.status == "hot" or post.status == "question-unsolved" or post.status == "question-solved" %}
+		{% if post.status == "public" or post.status == "hot" or post.status == "video" or post.status == "question-unsolved" or post.status == "question-solved" %}
 			<ul>
 				<li>
 					<div class="post-date code">
@@ -51,6 +51,9 @@ layout: default
 						{% endif %}
 						{% if post.status == "hot" %}
 							<span style="border: 1px solid Gold; background-color: Gold; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">HOT</span>
+						{% endif %}
+						{% if post.status == "video" %}
+							<span style="border: 1px solid Red; background-color: Red; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">Youtube</span>
 						{% endif %}
 						{% if post.status == "question-unsolved" or post.status == "question-solved" %}
 							<span style="border: 1px solid CornflowerBlue; background-color: CornflowerBlue; color: white; padding: 2px; border-radius: 5px; margin: 3px auto;">질문</span>
