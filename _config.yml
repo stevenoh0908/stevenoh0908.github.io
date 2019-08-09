@@ -6,7 +6,7 @@ author_name:        "책벌레" # change this to your name
 logo_url:           https://avatars1.githubusercontent.com/u/25861103?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
-url:                https://stevenoh0908.github.io # main url
+url:                "https://stevenoh0908.github.io" # main url
 baseurl:            /
 permalink:          /:title # Post permalink
 timezone:           KR # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
