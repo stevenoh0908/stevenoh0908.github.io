@@ -4,7 +4,7 @@ var disqus_config = function () {
 this.page.url = '{{ page.url | absolute_url }}';
 this.page.identifier = '{{ page.url | absolute_url }}';
 };
-function() {
+(function() {
 var d = document, s = d.createElement('script');
 s.src = 'https://stevenoh0908.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
