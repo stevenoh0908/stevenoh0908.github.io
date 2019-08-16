@@ -47,4 +47,9 @@ defaults:
       path:         "files"
     values:
       file:         true
+  -
+    scope:
+      path:         "music"
+    values:
+      music:        true
       
