@@ -52,4 +52,9 @@ defaults:
       path:         "music"
     values:
       music:        true
-      
+  -
+    scope:
+        path:      "files-forum"
+    values:
+        file-fourm: true
+
