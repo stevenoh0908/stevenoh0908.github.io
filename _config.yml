@@ -59,6 +59,6 @@ defaults:
         file-fourm: true
 -
     scope:
-        patch:     "files-problems"
+        path:     "files-problems"
     values:
         file-problems: true
