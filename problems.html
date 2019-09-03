@@ -14,7 +14,7 @@ layout: default
       </thead>
     
       <tbody>
-        {% assign files = site.static_files | where: "file-fourm", true %}
+        {% assign files = site.static_files | where: "file-problems", true %}
         {% for myfile in files %}
           <tr>   
             <td><a href="{{ myfile.path }}" download>{{ myfile.name }}</a></td>
