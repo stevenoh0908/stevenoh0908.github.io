@@ -57,4 +57,8 @@ defaults:
         path:      "files-forum"
     values:
         file-fourm: true
-
+-
+    scope:
+        patch:     "files-problems"
+    values:
+        file-problems: true
