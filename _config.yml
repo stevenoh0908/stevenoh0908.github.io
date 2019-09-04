@@ -57,9 +57,3 @@ defaults:
         path:      "files-forum"
     values:
         file-forum: true
--
-    scope:
-        path:     "files-problems"
-    values:
-        file-problems: true
-        
