@@ -56,7 +56,7 @@ defaults:
     scope:
         path:      "files-forum"
     values:
-        file-fourm: true
+        file-forum: true
 -
     scope:
         path:     "files-problems"
