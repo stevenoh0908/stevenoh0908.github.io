@@ -62,3 +62,8 @@ defaults:
         path:      "files-problems"
     values:
         file-problems: true
+ -
+    scope:
+        path:      "files-code"
+    values:
+        file-code: true
