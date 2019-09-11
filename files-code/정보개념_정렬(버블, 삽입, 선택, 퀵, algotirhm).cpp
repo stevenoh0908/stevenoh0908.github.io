@@ -13,7 +13,7 @@ void print(int data[], int left, int right) {
     return;
 }
 
-//Bubble sort(소스 이상, 고칠것!)
+//Bubble sort
 //버블 정렬은 인접한 두 원소의 대소를 비교하여 정렬이 완료될 때까지 자리를 바꾸는 정렬이다.
 
 void bubble_sort(int data[], int left, int right) {
