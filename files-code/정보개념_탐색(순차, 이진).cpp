@@ -41,6 +41,7 @@ int find_linear(int target, int start, int end) {
     return -1;
 }
 
+//Binary Search의 재귀함수형
 //아래 함수는 찾아진 원소의 index를 return 한다.
 int find_binary(int target, int start, int end) {
     int mid = (start+end)/2
@@ -48,6 +49,21 @@ int find_binary(int target, int start, int end) {
     if ((start-end)/2==0) return -1;
     else if (target > data[mid]) return find_binary(target, mid, end);
     else if(target < data[mid]) return find_binary(target, 0, mid);
+}
+
+//이건 KYH 선생님의 while문으로 Binary Search 구현한 코드
+int BinarySearch(int data[], int n, int key) {
+    int left=0, right=n-1, mid;
+    while(left<=right) {
+        mid=(left+right)/2;
+        if(key==data[mid])
+            return mid;
+        else if(key<data[mid])
+            right=mid-1;
+        else
+            left=mid+1;
+    }
+    return -1;
 }
 
 //n개의 data를 입력해서 그 중에 찾고자 하는 m개의 input이 몇 번째 원소인지 출력한다.(index는 0부터 시작)
