@@ -67,3 +67,8 @@ defaults:
         path:      "files-code"
     values:
         file-code: true
+  -
+    scope:
+        path:      "images"
+    values:
+        images: true
