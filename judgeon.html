@@ -10,7 +10,7 @@ layout: default
       <thead>
          <tr>
            <th> 파일 </th>
-           <th> 등록날짜 </th>
+           <th> 링크 </th>
          </tr>
       </thead>
     
@@ -18,8 +18,8 @@ layout: default
         {% assign files = site.static_files | where: "file-code", true %}
         {% for myfile in files %}
           <tr>   
-            <td><a href="{{ myfile.path }}" download>{{ myfile.name }}</a></td>
-            <td>{{ myfile.modified_time }}</td>
+            <td>{{ myfile.name }}</td>
+            <td><a href="{{ myfile.path }}" download>다운로드</a>  <a href="{{ myfile.path }}">바로보기</a></td>
           </tr>
         {% endfor %}
     </tbody>
