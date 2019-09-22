@@ -16,7 +16,7 @@ layout: default
         {% assign files = site.static_files | where: "file", true %}
         {% for myfile in files %}
           <tr>   
-            <td>{{ myfile.name }}</td>
+            <td><center>{{ myfile.name }}</center></td>
             <td><center><span style="border: 1px solid #3CB371; background-color: #3CB371; color: white; padding: 2px; border-radius: 5px; margin: 5px auto;"><a href="{{ myfile.path }}" download>다운로드</a></span></center></td>
           </tr>
         {% endfor %}
