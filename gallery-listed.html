@@ -9,16 +9,16 @@ layout: default
       <thead>
          <tr>
 	   <th><center>파일</center></th>
-	   <th><center>등록날짜</center></th>
+	   <th><center>링크</center></th>
          </tr>
       </thead>
     
       <tbody>
         {% assign files = site.static_files | where: "images", true %}
         {% for myfile in files %}
-          <tr>   
-            <td><a href="{{ myfile.path }}">{{ myfile.name }}</a></td>
-            <td>{{ myfile.modified_time }}</td>
+          <tr>
+            <td>{{ myfile.name }}</td>
+            <td><center><span style="border: 1px solid #3CB371; background-color: #3CB371; color: white; padding: 2px; border-radius: 5px; margin: 5px auto;"><a href="{{ myfile.path }}" download>다운로드</a></span> <span style="border: 1px solid #4f74e3; background-color: #4f74e3; color: white; padding: 2px; border-radius: 5px; margin: 5px auto;"><a href="{{ myfile.path }}">바로보기</a></center></span></td
           </tr>
         {% endfor %}
     </tbody>
