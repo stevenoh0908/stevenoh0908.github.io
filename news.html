@@ -3,6 +3,7 @@ layout: default
 ---
 
 <section>
+	<center><h3>기억할만한 지나침 - 뉴스</h3></center>
 	{% for post in site.posts %}
 		{% unless post.next %}
 			<h3 class="code">{{ post.date | date: '%Y' }}</h3>
