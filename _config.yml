@@ -69,6 +69,11 @@ defaults:
         file-code: true
   -
     scope:
+        path:      "files-keso"
+    values:
+        file-keso: true
+  -
+    scope:
         path:      "images"
     values:
         images: true
