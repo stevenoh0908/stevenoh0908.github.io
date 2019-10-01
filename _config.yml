@@ -74,6 +74,11 @@ defaults:
         file-keso: true
   -
     scope:
+        path:      "files-usastory"
+    values:
+        file-usastory: true
+  -
+    scope:
         path:      "images"
     values:
         images: true
