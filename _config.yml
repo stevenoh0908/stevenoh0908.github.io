@@ -74,9 +74,9 @@ defaults:
         file-keso: true
   -
     scope:
-        path:      "files-usastory"
+        path:      "files-codeproject"
     values:
-        file-usastory: true
+        file-codeproject: true
   -
     scope:
         path:      "images"

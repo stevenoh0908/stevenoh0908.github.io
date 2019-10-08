@@ -4,8 +4,7 @@ layout: default
 
 <section>
   
-  <center><h3>Judgeon & Infomatic Code Source & Solutions</h3></center>
-  <center><p>파일의 기본 이름은 문제 번호임. 특정 개념, 기술의 경우는 별도의 이름을 붙임.</p></center>
+  <center><h3>개인 프로젝트 및 연습 Code Files</h3></center>
   <table>
       <thead>
          <tr>
@@ -15,7 +14,7 @@ layout: default
       </thead>
     
       <tbody>
-        {% assign files = site.static_files | where: "file-code", true %}
+        {% assign files = site.static_files | where: "file-codeproject", true %}
         {% for myfile in files %}
           <tr>   
             <td><center>{{ myfile.name }}</center></td>

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<section>
+  
+  <center><h3>개인 프로젝트 및 연습 Code Files</h3></center>
+  <table>
+      <thead>
+         <tr>
+           <th width="60%"><center>파일</center></th>
+           <th width="40%"><center>링크</center></th>
+         </tr>
+      </thead>
+    
+      <tbody>
+        {% assign files = site.static_files | where: "file-codeproject", true %}
+        {% for myfile in files %}
+          <tr>   
+            <td><center>{{ myfile.name }}</center></td>
+            <td><center><span style="border: 1px solid #3CB371; background-color: #3CB371; color: white; padding: 2px; border-radius: 5px; margin: 5px auto;"><a href="{{ myfile.path }}" download>다운로드</a></span> <span style="border: 1px solid #4f74e3; background-color: #4f74e3; color: white; padding: 2px; border-radius: 5px; margin: 5px auto;"><a href="{{ myfile.path }}">바로보기</a></center></span></td>
+          </tr>
+        {% endfor %}
+    </tbody>
+  </table> 
+</section>
