@@ -4,9 +4,9 @@ layout: default
 
 <section>
   
-  <center><h3>개인 프로젝트 및 연습 Code Files</h3></center>
+  <center><h3>Judgeon 풀이 및 정보 수업 관련 자료 모음</h3></center>
   <table>
-      <thead>
+      <thead>음
          <tr>
            <th width="60%"><center>파일</center></th>
            <th width="40%"><center>링크</center></th>
@@ -14,7 +14,7 @@ layout: default
       </thead>
     
       <tbody>
-        {% assign files = site.static_files | where: "file-codeproject", true %}
+        {% assign files = site.static_files | where: "file-judgeon", true %}
         {% for myfile in files %}
           <tr>   
             <td><center>{{ myfile.name }}</center></td>
