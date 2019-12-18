@@ -16,11 +16,11 @@ status: public
 *블록체인*은 '블록'이라고 불리는 기록의 '리스트'에 상응하는 개념의 기술이다. 각각의 블록들은 그 이전 블록에 대한 암호학적 해시와, 타임스탬프, 거래 정보를 담는다.
 
 #### Double-Spending Problem
-![bob1](https://www.tutorialspoint.com/blockchain/images/double_spending.jpg)
+![bob1](https://www.tutorialspoint.com/blockchain/images/double_spending.jpg)<br>
 현실 세계에서의 거래는 위의 그림과 같이 진행된다. 밥이 리사에게 10$를 지불하고 리사는 밥에게 책을 건넨다. 밥이 리사에게 10$을 지불하면, 그 지폐는 리사의 수중에 있고 밥은 이를 다시는 사용할 수 없다.<br>
-![bob2](https://www.tutorialspoint.com/blockchain/images/paid_digital_form.jpg)
+![bob2](https://www.tutorialspoint.com/blockchain/images/paid_digital_form.jpg)<br>
 한 편 디지털 세계에서 이를 검토하면 상황이 달라진다. 밥은 어떤 일련의 바이너리 파일 형태로 구성된 Digital Coin을 리사에게 파일 전송하여 책을 사는 한 편, 앨리스에게도 이 복사본을 전송해서 사과 5개를 주문할 수도 있는 것이다. 리사와 앨리스 모두 밥에게서 10$을 받았다고 생각할 수밖에 없다. 즉, 디지털 세계에서의 거래는 현실 세계의 거래와는 달리 그 거래의 화폐가 전송 이후에 반드시 사라지는 것이 아니므로, 이중 지불(Double-Spending)이 가능해지는 것이다.
-![bob3](https://www.tutorialspoint.com/blockchain/images/centrailized_authority.jpg)
+![bob3](https://www.tutorialspoint.com/blockchain/images/centrailized_authority.jpg)<br>
 이 문제를 해결하기 위해서는 지금까지는 공신력 있는 중앙 기관(Centralized authority)이 거래 정보를 저장하고 이를 검증하는 전략을 취해왔다. 밥이 리사에게 10$을 지불하면(거래가 이루어지면), 중앙 기관(은행)은 밥의 계좌에서 10$을 빼내고 리사의 계좌에 10$을 더하게 될 것이며, 그렇게 함으로서 밥이 또 다시 10$을 손해보지 않고 이중 지불하는 문제가 해결되는 것이다. 그런데 이 중앙 당국의 운영에는 돈이 필요하므로, 일반적으로 기존 온라인 경제 시스템에서 은행은 거래에 수수료를 부과하여 이를 해결하는데, 아깝다.<br>
 이 문제를 비트코인이라는 블록체인에 기반을 둔 신화폐가 해결하려고 달려든 것이다.
 
@@ -29,7 +29,7 @@ status: public
 비트코인은 결국 기존 경제 시스템에서 은행에 의해 저장되고 관리되었던 거래 기록을 대중화하자는 아이디어에서 출발했다. 다만, 대중성에서 비추어지는 우려를 고려할 때, 거래 기록은 보되 그 거래 기록을 누구도 수정할 수 없어야 한다. 게다가, 만일 이 거래 기록의 양이 어마어마하다는 점을 고려할 때 이들 데이터를 분산하는 것도 상당히 중요하다고 할 것이다.
 
 #### PKI(Public Key Cryptography)
-[이 부분은 특별히 Tutorialspoint보다 정리가 더 잘된 이 블로그를 참고하였음.](https://crazia.tistory.com/entry/PKI-PKI-%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90-%EA%B0%84%EB%8B%A8-%EC%84%A4%EB%AA%85)<br>
+[이 부분은 특별히 Tutorialspoint보다 정리가 더 잘된 이 블로그를 참고하였음.](https://crazia.tistory.com/entry/PKI-PKI-%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90-%EA%B0%84%EB%8B%A8-%EC%84%A4%EB%AA%85)
 
 ##### Enctyption, Decryption
 평문에 무엇인가 변경을 가하는 것을 Encryption이라 하고, 변경된 것을 다시 원 상태로 되돌리는 것을 Decryption이라고 이해하면 된다.
@@ -41,10 +41,10 @@ status: public
 
 #### Asymmetric Key Algorithm(비대칭 키 알고리즘)
 비대칭 키 알고리즘에서는 개인키(Private Key)와 공개키(Public Key)의 두 개의 키를 이용한다. 두 개의 키를 쓰기 때문에 '대칭키 알고리즘이 아니다'라는 의미에서, 비대칭키 알고리즘이라고 한다. 비대칭키 알고리즘에서는 Encryption과 Decryption에 서로 다른 키를 사용하며, 대표적인 알고리즘으로는 RSA가 있다. RSA는 소수를 이용한다.
-![비대칭키 알고리즘 암호화](https://t1.daumcdn.net/cfile/tistory/2614AE4D516B60E114)
+![비대칭키 알고리즘 암호화](https://t1.daumcdn.net/cfile/tistory/2614AE4D516B60E114)<br>
 그림에서 보듯이, 공개키를 이용해서 Encryption을 한다면 Decryption을 하기 위해서는 반드시 개인 키를 이용해야 한다. 즉, 암호화와 복호화는 항상 상반되는 키를 사용하게 되는 것이다. 위 그림처럼 통상 공개키를 가지고 Encripytion을 하는 경우는 원하는 통신 상대만이 풀기를 바라기 때문에 메세지 암호화에 사용된다. <br><br>
 
-![비대칭키 알고리즘 전자서명](https://t1.daumcdn.net/cfile/tistory/200E2E34516B62981A)
+![비대칭키 알고리즘 전자서명](https://t1.daumcdn.net/cfile/tistory/200E2E34516B62981A)<br>
 이처럼 개인키를 가지고 Encryption 하는 경우, 쌍이 되는 공개키로 풀어서 이 메세지의 출처를 검증할 수 있다. 즉, 이러한 케이스는 개인이 보낸 내용을 증명할 때 사용 가능하다. 이러한 경우를 보통 개인키 '전자서명', 공개키 '서명검증'이라 부른다.
 
 #### Public Key & Private Key
@@ -53,29 +53,29 @@ status: public
 이 두 가지가 바로 공개키 암호와와 전자서명의 원리이고, 이 기반을 마련해 둔 것이 PKI이다.
 
 #### In Real World
-![공개키 암호화에 사용되는 포맷](https://t1.daumcdn.net/cfile/tistory/262CAB4B516B94531D)
+![공개키 암호화에 사용되는 포맷](https://t1.daumcdn.net/cfile/tistory/262CAB4B516B94531D)<br>
 공개키 암호화에 쓰이는 포맷입니다. 물론 이보다 더 자세히 들어가면 더 복잡해지지만, 일단 이정도로 개념을 알고 있어도 충분할 것입니다. 앞에서 설명했듯이 공개키 암호화의 핵심은 받을 당사자만 풀어볼 수 있게 당사자의 공개키로 내용을 인크립션 (Encryption) 하는 것이 목적입니다.
 
 그런데 위의 그림을 보면 임시 대칭키를 생성합니다. 이 이유가 바로 속도 차이입니다. 평문 (Plain Text) 가 만약 크기가 많이 크다면 이를 공개키를 이용해서 Encrypt 하는데 시간이 많이 걸립니다. 그래서 임시 대칭키를 자동으로 생성하고 이 대칭키로 평문 (Plain Text)을 Encrypt 해서 싸이퍼 문(Cipher Text)로 변경합니다. 그리고 그 생성한 대칭키를 메시지를 받을 A의 공개키(Public Key)로 Encrypt 합니다. (이 Encrypt 된 임시 대칭키를 풀 수 있는 사람은 세상에 A 본인 밖에 없습니다) 그래서 'Cipher Text' 와 A의 공개키로 Encrypt 한 'Encrypted Key' 를 한꺼번에 A에게 보내면 A는 'Encrypted Key'를 자신의 개인키 (Private Key) 로 Decrypt 해서 임시 대칭키를 얻어내고 그 임시 대칭키로 다시 Cipher Text 를 Decrypt 합니다. 그러면 평문(Plain Text)를 얻어낼 수 있는 것이지요. 
 
-![전자서명에 사용되는 포맷](https://t1.daumcdn.net/cfile/tistory/1568E53E516B991024)
+![전자서명에 사용되는 포맷](https://t1.daumcdn.net/cfile/tistory/1568E53E516B991024)<br>
 전자서명 프로세스의 간단한 설명입니다. 전자서명은 보낸 당사자가 보냈다는 것을 확인하는 절차입니다. 즉 평문 (Plain Text) 자체를 Encrypt 할 필요가 없다는 것입니다. 따라서 평문(Plain Text)를 암호화 해쉬 함수 (Cryptographic Hash Function) 로 축약을 하고 그 축약된 결과를 개인키(Private Key)로 Encrypt 합니다. 이 것을 Signature 라고 편의상 부르기로 합니다. (16 바이트 아니면 20바이트를 Encrypt 하기 때문에 속도가 빠릅니다) 이 Encrypt 한 결과와 평문(Plain Text)을 함께 받을 사람에게 보냅니다. 그러면 메시지를 받는 사람은 보낸 사람의 공개키(Public Key)를 구해서 (공개키 이기 때문에 쉽게 구할 수가 있습니다) Signature 를 Decrypt 합니다. 그러면 축약된 결과가 나오면 같이 들어 있는 평문 (Plain Text) 을 암호화 해쉬 함수로 축약을 하고 그 결과를 앞에서 Signature 를 Decrypt 한 결과와 비교합니다. 같다면 A 가 보낸 문서임을 확신할 수가 있는 것입니다. 말 그대로 서명을 확인 하는 것입니다.
 
 ### Hashing
 PKI에서 핵심이 되는 것 중 하나는 해쉬 함수이다. 해쉬함수는 어떤 가변적 크기의 데이터를 고정된 사이즈로 매핑하는 함수이다. 비트코인은 SHA-256 해시 함수(256bits의 결과를 return함)를 사용한다.
-![Hashing](https://www.tutorialspoint.com/blockchain/images/hashing.jpg)
+![Hashing](https://www.tutorialspoint.com/blockchain/images/hashing.jpg)<br>
 이 해쉬 값의 특징은 원문이 조금이라도 바뀔 경우, 해쉬값도 변동하기 때문에, 짧은 길이의 데이터만으로 긴 데이터의 변동 추적이나 일치 검증에 상당히 유용하다는 것이다. 그래서, 파일 검증에서는 파일의 해쉬 값이 같고 크기가 같다면, 같은 데이터라고 판단하는 것이 가능한 것이다.
 
 ### Mining
-![Mining 1](https://www.tutorialspoint.com/blockchain/images/mining.jpg)
+![Mining 1](https://www.tutorialspoint.com/blockchain/images/mining.jpg)<br>
 비트코인에서 거래 정보는 단순히 거래 양 당사자 간에서만 공유되지 않고, 네트워크에 연결된 모든 노드에게 전송된다. 이 중 몇몇 노드에는 Miner가 존재하는데, 이들은 Mining을 한다.
-![Mining 2](https://www.tutorialspoint.com/blockchain/images/mining_process.jpg)
+![Mining 2](https://www.tutorialspoint.com/blockchain/images/mining_process.jpg)<br>
 Mining은 공유된 여러가지 거래 정보들을 하나의 블록으로 만드는 과정을 말한다. 위 그림처럼 말이다. 메세지들의 블록이 만들어지면, Miner는 해쉬 함수를 이용하여 블록에 대한 해쉬를 만들고, 이 해쉬와 블록의 비교를 통하여 블록의 중간 수정 여부를 검증 가능하다. 만약 블록이 중도에 수정된다면 해쉬값이 맞지 않을 테니까. 게다가, 모든 거래 정보는 timestamp가 찍혀 있어서 그 누구도 거래 순서를 해쉬값을 바꾸지 않고 바꾸는 것도 불가능하다. 이 과정으로 비트코인은 거래 정보를 보호한다.<br>
 _질문: 그럼 이 해쉬값은 어떻게 보호하지? 해쉬값도 같이 steal 당할 수 있지 않던가...?_
 
 ### Chaining Blocks
 블록체인에서 블록들은 다양한 Miner들에 의해서 연결되어, 완전히 분배된 공용 거래 장부를 구성한다.(truly distributed public ledger)
-![Chaining Blocks](https://www.tutorialspoint.com/blockchain/images/chaining_blocks.jpg)
+![Chaining Blocks](https://www.tutorialspoint.com/blockchain/images/chaining_blocks.jpg)<br>
 체인에서 각각의 블록들은 앞에서 언급한 대로 거래 정보 메세지들 뿐만이 아니라, 어떤 다른 Miner로부터 만들어진 블록의 해쉬값도 포함한다. 따라서, 중도의 블록에 대한 검증이 후의 블록들을 통하여 가능하게 된다. 중도 블록의 해쉬가 다음 블록의 데이터로 보호되는 것이다. 따라서, Miner는 블록을 만들 때, 체인에서 가장 마지막 블록의 해쉬를 찾은 후, 이것과 거래 정보들을 포함한 새로운 블록을 만들고 이것의 해쉬를 만든다. 이 새로운 블록이 체인은 맨 마지막에 위치하게 되며, 체인이 계속 성장하게 된다.<br><br>
 
 _End of Today's Note_
