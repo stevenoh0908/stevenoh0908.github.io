@@ -1,6 +1,6 @@
 ---
-title: Blockchain 공부 노트 #1
-update: 2019-12-18 16:00
+title: Blockchain 공부 노트 1편
+update: 2019-12-07 18:00
 status: public
 ---
 
