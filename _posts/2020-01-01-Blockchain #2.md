@@ -1,0 +1,27 @@
+---
+title: Blockchain 공부 노트 2편
+updated: 2020-01-01 20:32
+status: private
+---
+
+## Blockchain #2
+지난 시간에 이어서 오늘도 블록체인 공부를 했다. 공부하는데 참고한 사이트는 기본적으로 지난 시간과 같은 Tutorialspoint의 강좌 사이트인 [여기](https://www.tutorialspoint.com/blockchain/blockchain_proof_of_work.htm)부터 참고했다.  
+
+#### 작업 증명(Proof of Work)
+![Proof of Work](https://www.tutorialspoint.com/blockchain/images/proof_of_work.jpg)  
+솔직히 이해가 잘 되지 않는 부분이다. 그래서 다른 문서들을 좀 많이 참고했다.  
+참고한 사이트의 리스트를 수록한다.  
+- [Bitcon Wiki: Proof of Work](https://en.bitcoin.it/wiki/Proof_of_work)
+- [해시넷: 해시캐시](http://wiki.hash.kr/index.php/%ED%95%B4%EC%8B%9C%EC%BA%90%EC%8B%9C)
+- [brownbears님의 tistory](https://brownbears.tistory.com/373)
+- [The Loop 블로그](https://blog.theloop.co.kr/2017/06/01/%EC%9E%91%EC%97%85%EC%A6%9D%EB%AA%85pow-proof-of-work%EA%B3%BC-%EC%A7%80%EB%B6%84%EC%A6%9D%EB%AA%85pos-proof-of-stake/)
+  
+일단 작업 증명(Proof of Work, 줄여서 PoW) 알고리즘은 **네트워크의 모든 노드가 동시에 블록을 만들 수 없게 하는 데에 초점**을 두는 알고리즘으로, 이 알고리즘을 통과해야만 블록을 생성할 수 있다. 일반적으로 작업 증명 알고리즘은 난수 대입을 이용하므로 엄청난 컴퓨팅 파워를 요구한다.  
+작업증명 알고리즘을 사용하는 블록체인의 블록 해시는 Difficulty에 따라 선택된 Target 데이터 규격을 만족해야 합니다. 블록해시는 해시 알고리즘에 의해 만들어지기 때문에, Target 데이터를 가지고 대응되는 입력값을 알아낼 수 없다. 따라서, 블록체인의 노드는 조건을 만족하기 위해 Nonce라는 임의의 값을 계속 대입하게 되는 것이고, 이 Nonce값이 Target 데이터 조건을 만족하면 블록이 생성되는 것이죠.  
+
+작업 증명 알고리즘은 Difficulty 조절 알고리즘을 이용하여 10분당 1~2개의 블록이 생성된다는 것을 보장한다.  
+한 편, 블록체인 네트워크에서는 그 체인은 선형으로 연결되어야 하며, 분기가 없어야 한다. 이 분기를 방지하기 위하여 사용하는 알고리즘이 작업증명 합의 알고리즘이다.  
+_작업증명 합의 알고리즘은 일시적으로 합의가 깨질 수 있으나 확률적으로 마지막엔 하나의 블록체인을 합의하게 되는 합의의 알고리즘입니다._  
+
+다만 작업증명 알고리즘은 속도가 상당히 느리고, 컴퓨팅 자원이 상당히 낭비된다. 비트코인 한 블럭을 생성하기 위해서는 5,000,000TH/s(1TH/s = 초당 1,000,000,000,000번의 해시연산)이상의 해시 파워가 필요하다.  
+
