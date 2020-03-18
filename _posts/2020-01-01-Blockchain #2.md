@@ -1,7 +1,7 @@
 ---
 title: Blockchain 공부 노트 2편
 updated: 2020-01-01 20:32
-status: private
+status: public
 ---
 
 ## Blockchain #2
