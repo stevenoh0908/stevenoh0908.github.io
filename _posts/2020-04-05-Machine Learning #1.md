@@ -1,5 +1,5 @@
 ---
-title: Machine Learning #1
+title: Machine Learning 1
 updated: 2020-04-05 12:00
 status: public
 ---
