@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 철학, 정치, 사회, 인문, 법, 천문학, 프로그래밍 모두를 좋아하는 별난 사람,
-책벌레입니다.
+입니다.
 
 이메일: <a href="mailto:stevenoh0908@gmail.com">stevenoh0908@gmail.com</a>
 
