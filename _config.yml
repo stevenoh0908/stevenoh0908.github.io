@@ -1,7 +1,7 @@
 # Site Info
-title:              "책벌레의 생각 카페"
-description:        "에디터 책벌레의 블로그"
-author_name:        "책벌레" # change this to your name
+title:              "커피사유의 생각 카페"
+description:        "에디터 커피사유의 블로그"
+author_name:        "커피사유" # change this to your name
 logo_url:           https://avatars.githubusercontent.com/u/25861103?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
