@@ -2,8 +2,9 @@
 layout: page
 title: About
 ---
-철학, 정치, 사회, 인문, 법, 천문학, 프로그래밍 모두를 좋아하는 별난 사람,
-커피사유입니다.
+낮에는 학구열과 호기심이 넘치는 학자, 밤에는 실리적인 프로그래머, 새벽에는 새벽만의 또렷한 시각으로 세상을 해석하는 블로거. 별난 사람, 커피사유입니다.
+블로그 [커피, 사유(思惟)](https://stevenoh0908.kro.kr/blog)를 운영하고 있으며, 개인 프로그래밍 스튜디오인 dev. Coffee의 메인 개발자를 맡고 있습니다. 브런치(Brunch)에서도 [커피사유(@coffeethink)](https://brunch.co.kr/@coffeethink)라는 필명으로 활동하고 있습니다.
+서울대학교 지구환경과학부 학부 과정에 있지만, 종종 취미로 블로깅과 프로그래밍, 라디오 방송 진행을 합니다.
 
 이메일: <a href="mailto:stevenoh0908@gmail.com">stevenoh0908@gmail.com</a>
 
